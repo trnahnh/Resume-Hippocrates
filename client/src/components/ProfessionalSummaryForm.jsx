@@ -1,7 +1,7 @@
 import { Sparkles } from 'lucide-react'
 import React from 'react'
 
-const ProfessionalSummaryForm = ({data, onChange, setResumeData}) => {
+const ProfessionalSummaryForm = ({data, onChange}) => {
   return (
     <div className='space-y-4'>
         <div className='flex items-center justify-between'>

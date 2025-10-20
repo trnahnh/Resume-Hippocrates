@@ -12,7 +12,7 @@ const EducationForm = ({ data, onChange }) => {
             gpa: "",
         };
         onChange([...data, newEducation])
-      }
+    }
     
     const removeEducation = (index) => {
         const updated = data.filter((_, i) => i !== index);
