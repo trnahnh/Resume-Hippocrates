@@ -40,3 +40,53 @@ export const registerUser = async (req, res) => {
         return res.status(400).json({message: error.message})
     }
 }
+
+// Controller for user login
+// POST: /api/users/register
+export const loginUser = async (req, res) => {
+    try {
+        const {email, password} = req.body;
+
+        // Check if user exists
+        const user = await User.findOne({email})
+        if (!user) {
+            return res.status(400).json({message: 'Invalid email or password'})
+        }
+
+        // Check if password is correct
+        if (!user.comparePassword(password)) {
+            return res.status(400).json({message: 'Invalid email or password'})
+        }
+
+        // Return successs message
+        const token = generateToken(user._id)
+        user.password = undefined;
+
+        return res.status(200).json({message: 'Login successfully', token, user})
+
+    } catch (error) {
+        return res.status(400).json({message: error.message})
+    }
+}
+
+// Controller for getting user by id
+// GET: /api/users/data
+export const getUserById = async (req, res) => {
+    try {
+
+        const userId = req.userId;
+
+        // Check if user exists
+        const user = await User.findById(userId)
+        if (!user) {
+            return res.status(404).json({message: 'User not found'})
+        }
+
+        // Return user
+        user.password = undefined;
+        return res.status(200).json({user})
+
+    } catch (error) {
+        return res.status(400).json({message: error.message})
+    }
+}
