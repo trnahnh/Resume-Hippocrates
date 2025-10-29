@@ -33,7 +33,7 @@ cd Resume-Hippocrates
 
 cd client
 npm install
-npm run start
+npm run dev
 
 ```
 
@@ -42,7 +42,7 @@ npm run start
 
 cd server
 npm install
-npm start
+npm run server
 
 ```
 
