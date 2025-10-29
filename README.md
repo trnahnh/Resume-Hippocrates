@@ -2,10 +2,10 @@
 
 Automated resume builder powered by AI and optimized for ATS (Applicant Tracking Systems). Instantly generate and enhance resumes with industry keywords, rich text editing, and downloadable PDF support.
 
-🌐 [Live Demo](https://resume-hippocrates.onrender.com/)
-📦 Full-stack: React, Node.js, MongoDB, Express.js, GeminiAPI
-🖼️ Profile image upload & enhancement (ImageKit integration
-⚡ Deploy frontend & backend together on Render.com
+- 🌐 [Live Demo](https://resume-hippocrates.onrender.com/)
+- 📦 Full-stack: React, Node.js, MongoDB, Express.js, GeminiAPI
+- 🖼️ Profile image upload & enhancement (ImageKit integration
+- ⚡ Deploy frontend & backend together on Render.com
 
 <img width="1918" height="873" alt="pic1" src="https://github.com/user-attachments/assets/6b20cf6b-45ed-4d0c-9c93-c919f87f0db4" />
 
