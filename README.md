@@ -47,3 +47,9 @@ npm run server
 ```
 
 Configure `.env` files in both `client/` and `server/` as needed.
+
+## 👩‍💻 Author
+
+**Andrea Tran | tran3ah@mail.uc.edu**  
+University of Cincinnati  
+College of Engineering and Applied Science — Class of 2029
